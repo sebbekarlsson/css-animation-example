@@ -1,0 +1,91 @@
+@keyframes move {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 300px;
+    }
+}
+
+@keyframes color-fade {
+    0% {
+        color: black;
+        top: 0;
+        left: 0;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    100% {
+        color: green;
+        top: 350px;
+        left: 350px;
+    }
+}
+
+.color-fade {
+    position: absolute;
+    animation: color-fade 4s alternate infinite;
+}
+
+.move-left-right {
+    animation: move 4s alternate infinite;
+    position: absolute;
+}
+
+img {
+    width: 128px;
+    top: 300px;
+}
+
+h1 {
+
+    top: 128px;
+}
+
+button {
+    min-width: 128px;
+    height: 64px;
+    background: none;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    transition: background-color .5s;
+}
+
+button:hover {
+    background-color: pink;
+    transition: background-color .5s;
+}
+
+@keyframes switch-image {
+    0% {
+        background-image: url("vitor-pinto-n6qgjlriBgM-unsplash.jpg");
+    }
+
+    50% {
+        width: 720px;
+    }
+
+    100% {
+        background-image: url("william-chiesurin-2kUYaz1M5EU-unsplash.jpg");
+        height: 720px;
+    }
+}
+
+.custom-image {
+    animation: infinite 10s alternate;
+
+    background: url("william-chiesurin-2kUYaz1M5EU-unsplash.jpg");
+    background-size: cover;
+
+
+    position: absolute;
+    top: 640px;
+    width: 640px;
+    height: 480px;
+}
